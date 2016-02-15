@@ -5,6 +5,7 @@ class Job(models.Model):
     TYPES = (
         ('fibonacci', 'fibonacci'),
         ('power', 'power'),
+        ('sleeping', 'sleeping'),
     )
 
     STATUSES = (

@@ -1,4 +1,5 @@
 from functools import wraps
+from time import sleep
 
 from myproject.celeryconf import app
 from .models import Job
@@ -47,5 +48,5 @@ def _fib(n):
 
 TASK_MAPPING = {
     'power': power,
-    'fibonacci': fib
+    'fibonacci': fib,
 }

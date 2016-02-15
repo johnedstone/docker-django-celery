@@ -15,7 +15,7 @@ web:
   build: .
   command: ./run_web.sh
   volumes:
-    - .:/app
+    - .:/app:z
   ports:
     - "8000:8000"
   links:
@@ -26,8 +26,9 @@ worker:
   build: .
   command: ./run_celery.sh
   volumes:
-    - .:/app
+    - .:/app:z
   links:
     - db:db
     - rabbitmq:rabbit
     - redis:redis
+
