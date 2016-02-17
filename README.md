@@ -1,5 +1,5 @@
-Sane Django Development with Docker
-===================================
+Pulled from Sane Django Development with Docker
+===============================================
 
 This repository contains the source code for running django in both
 a development and production environment based on docker.
