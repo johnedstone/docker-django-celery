@@ -2,15 +2,15 @@ db:
   image: postgres:9.4
   environment:
     - POSTGRES_PASSWORD=mysecretpassword
-redis:
-  image: redis:2.8.19
-rabbitmq:
-  image: tutum/rabbitmq
-  environment:
-    - RABBITMQ_PASS=mypass
-  ports:
-    - "5672:5672"
-    - "15672:15672"
+#redis:
+#  image: redis:2.8.19
+#rabbitmq:
+#  image: tutum/rabbitmq
+#  environment:
+#    - RABBITMQ_PASS=mypass
+#  ports:
+#    - "5672:5672"
+#    - "15672:15672"
 web:
   build: .
   command: ./run_web.sh
@@ -20,15 +20,15 @@ web:
     - "9000:8000"
   links:
     - db:db
-    - rabbitmq:rabbit
-    - redis:redis
-worker:
-  build: .
-  command: ./run_celery.sh
-  volumes:
-    - .:/app:z
-  links:
-    - db:db
-    - rabbitmq:rabbit
-    - redis:redis
+#    - rabbitmq:rabbit
+#    - redis:redis
+#worker:
+#  build: .
+#  command: ./run_celery.sh
+#  volumes:
+#    - .:/app:z
+#  links:
+#    - db:db
+#    - rabbitmq:rabbit
+#    - redis:redis
 
