@@ -58,5 +58,8 @@ DATABASES = {
         'PORT': os.environ.get('DB_PORT_5432_TCP_PORT', ''),
     },
 }
-import pprint
-pprint.pprint(DATABASES['default'])
+#import pprint
+#pprint.pprint(DATABASES['default'])
+#fh = open('/var/tmp/db.txt', 'w')
+#fh.write('{}'.format(DATABASES['default']))
+#fh.close()
