@@ -1,45 +1,27 @@
 import os
-
 from kombu import Exchange, Queue
-
-
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
-
-# SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'megg_yej86ln@xao^+)it4e&ueu#!4tl9p1h%2sjr7ey0)m25f'
-
-# SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 TEMPLATE_DEBUG = True
 ALLOWED_HOSTS = []
-
-# Application definition
-
 INSTALLED_APPS = (
     'django.contrib.staticfiles',
-
     'rest_framework',
     'myproject',
 )
-
 MIDDLEWARE_CLASSES = (
 )
-
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': ('rest_framework.permissions.AllowAny',),
     'PAGINATE_BY': 10
 }
-
 ROOT_URLCONF = 'myproject.urls'
-
 WSGI_APPLICATION = 'myproject.wsgi.application'
-
 TIME_ZONE = 'UTC'
 USE_TZ = True
-
 CELERY_ENABLE_UTC = True
 CELERY_TIMEZONE = "UTC"
-
 LANGUAGE_CODE = 'en-us'
 USE_I18N = True
 USE_L10N = True

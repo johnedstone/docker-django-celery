@@ -20,6 +20,7 @@ web:
     - "9000:8000"
   links:
     - db:db
+
 #    - rabbitmq:rabbit
 #    - redis:redis
 #worker:
