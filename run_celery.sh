@@ -1,4 +1,5 @@
 #!/bin/sh
 
-cd myproject
-su -m myuser -c "celery worker -A myproject.celeryconf -Q default -n default@%h"
+cd picha
+# su -m myuser -c "celery worker -A picha -Q default -n default@%h"
+su -m myuser -c "celery worker -A picha -Q default -n default@%h -l info"
