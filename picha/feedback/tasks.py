@@ -11,4 +11,3 @@ def send_feedback_email_task(email, message):
     """sends an email when feedback form is filled successfully"""
     logger.info("Sent feedback email")
     return send_feedback_email(email, message)
-

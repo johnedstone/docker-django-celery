@@ -60,13 +60,9 @@ STATIC_ROOT = '/static/'
 STATIC_URL = '/static/'
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': os.environ.get('DB_ENV_DB', 'postgres'),
-        'USER': os.environ.get('DB_ENV_POSTGRES_USER', 'postgres'),
-        'PASSWORD': os.environ.get('DB_ENV_POSTGRES_PASSWORD', ''),
-        'HOST': os.environ.get('DB_PORT_5432_TCP_ADDR', ''),
-        'PORT': os.environ.get('DB_PORT_5432_TCP_PORT', ''),
-    },
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    }
 }
 # Redis
 REDIS_PORT = 6379
