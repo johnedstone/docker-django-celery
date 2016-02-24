@@ -22,6 +22,7 @@ web:
     - db:db
     - redis:redis
     - rabbitmq:rabbit
+# This makes more sense than supervisord, for the moment
 worker:
   build: .
   command: ./run_celery.sh
