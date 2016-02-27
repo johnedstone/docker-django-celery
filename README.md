@@ -15,3 +15,5 @@ Bringing in ideas from my branch picha which is based on
 
 into the synaco project so so that picha will run inside docker-compose - in master branch
 
+### To Do
+Figure out how to createsuperuser programatically.
