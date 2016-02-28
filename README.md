@@ -1,6 +1,6 @@
 ## django with celery using docker-compose
 
-The master branch is currently using docker-compose, base on the ideas from http://www.syncano.com/configuring-running-django-celery-docker-containers-pt-1/
+The master branch is currently using docker-compose, base on the ideas from http://www.syncano.com/configuring-running-django-celery-docker-containers-pt-1/ The branches were used to develop from the references.
 
 References:
   - As noted above: http://www.syncano.com/configuring-running-django-celery-docker-containers-pt-1/
