@@ -1,20 +1,13 @@
-## Configure django with celery and run everything in containers
+## Configure django with celery using docker-compose
 
 This projects shows an example of configuration django with celery.
 
-Everything runs inside Docker containers.
+The master branch is currently using docker-compose, base on the ideas from http://www.syncano.com/configuring-running-django-celery-docker-containers-pt-1/
 
-More details about this configuration can be found [here](http://www.syncano.com/configuring-running-django-celery-docker-containers-pt-1/).
-
-Note: 14-Feb-2016 forked to johnedstone
-
-Bringing in ideas from my branch picha which is based on
-
+References:
   - As noted above: http://www.syncano.com/configuring-running-django-celery-docker-containers-pt-1/
   - From: https://realpython.com/blog/python/asynchronous-tasks-with-django-and-celery/
   - See also http://michal.karzynski.pl/blog/2014/05/18/setting-up-an-asynchronous-task-queue-for-django-using-celery-redis/
 
-into the synaco project so so that picha will run inside docker-compose - in master branch
-
 ### To Do
-Figure out how to createsuperuser programatically.
+Figure out how to django createsuperuser programatically, but currently not needed.
