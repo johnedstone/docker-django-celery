@@ -46,7 +46,20 @@ def _fib(n):
     else:
         return _fib(n - 1) + _fib(n - 2)
 
+@app.task
+@update_job
+def docker_pull(n):
+    from subprocess import Popen, PIPE
+    import shlex
+    #cmd = shlex.split('su -m myuser -c "echo helloworld"')
+    cmd = shlex.split('echo helloworld')
+    p1 = Popen(cmd, stdout=PIPE, stderr=PIPE)
+    stdout, stderr = p1.communicate()
+    #return '{} - {}'.format(stdout, stderr)
+    return 42
+
 TASK_MAPPING = {
     'power': power,
     'fibonacci': fib,
+    'docker_pull': docker_pull,
 }

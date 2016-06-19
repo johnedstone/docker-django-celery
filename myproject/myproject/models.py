@@ -5,7 +5,7 @@ class Job(models.Model):
     TYPES = (
         ('fibonacci', 'fibonacci'),
         ('power', 'power'),
-        ('sleeping', 'sleeping'),
+        ('docker_pull', 'docker_pull'),
     )
 
     STATUSES = (
