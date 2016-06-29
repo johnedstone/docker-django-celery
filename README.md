@@ -1,9 +1,9 @@
 ## django with celery using docker-compose
 
-The master branch is currently using docker-compose, base on the ideas from http://www.syncano.com/configuring-running-django-celery-docker-containers-pt-1/ The branches were used to develop from the references.
+The master branch is currently using docker-compose, base on the ideas from https://www.syncano.io/blog/configuring-running-django-celery-docker-containers-pt-1/ The branches were used to develop from the references.
 
 References:
-  - As noted above: http://www.syncano.com/configuring-running-django-celery-docker-containers-pt-1/
+  - As noted above: https://www.syncano.io/blog/configuring-running-django-celery-docker-containers-pt-1/
   - From: https://realpython.com/blog/python/asynchronous-tasks-with-django-and-celery/
   - See also http://michal.karzynski.pl/blog/2014/05/18/setting-up-an-asynchronous-task-queue-for-django-using-celery-redis/
 
